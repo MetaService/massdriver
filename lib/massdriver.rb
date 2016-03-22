@@ -1,4 +1,6 @@
 require "massdriver/version"
+require 'rubygems'
+require 'bundler/setup'
 
 module Massdriver
 
