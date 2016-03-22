@@ -2,22 +2,21 @@ require "massdriver/version"
 
 module Massdriver
 
-Class Massdriver
-def initialize
-#  Self Developing Systems
-@g = GraphViz.new( :G, :type => :digraph )
-@github = "https://github.com"
-@gitaccount = nil
-@system_name = "system"
-@domain = "system.com"
-@type_domain_prefix = "x"
+class Massdriver
+  def initialize
+     #  Self Developing Systems
+    @g = GraphViz.new( :G, :type => :digraph )
+    @github = "https://github.com"
+    @gitaccount = nil
+    @system_name = "system"
+    @domain = "system.com"
+    @type_domain_prefix = "x"
 
-@mqtable = Hash.new
-@dbtable = Hash.new
-@msttable = Hash.new
-@msitable = Hash.new
-
-end
+    @mqtable = Hash.new
+    @dbtable = Hash.new
+    @msttable = Hash.new
+    @msitable = Hash.new
+    end
 
 def newSystem(name,description)
 	@system_name = name
@@ -57,5 +56,5 @@ end
 def newMq2RInstance(name,abbr,mst,qname,url,data)
 end
 
-end
-end
+end #Class
+end #Module
