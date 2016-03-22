@@ -2,7 +2,6 @@ require "massdriver/version"
 
 module Massdriver
 
-class Massdriver
   def initialize()
      #  Self Developing Systems
     @g = GraphViz.new( :G, :type => :digraph )
@@ -56,5 +55,4 @@ end
 def newMq2RInstance(name,abbr,mst,qname,url,data)
 end
 
-end #Class
 end #Module
