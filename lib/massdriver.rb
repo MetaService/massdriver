@@ -3,7 +3,7 @@ require "massdriver/version"
 module Massdriver
 
 class Massdriver
-  def initialize
+  def initialize()
      #  Self Developing Systems
     @g = GraphViz.new( :G, :type => :digraph )
     @github = "https://github.com"
