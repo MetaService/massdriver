@@ -2,7 +2,9 @@ require "massdriver/version"
 require 'ruby-graphviz'
 
 module Massdriver
-// Self Developing Systems
+
+def initialize
+#  Self Developing Systems
 @g = GraphViz.new( :G, :type => :digraph )
 @github = "https://github.com"
 @gitaccount = nil
@@ -15,17 +17,17 @@ module Massdriver
 @msttable = Hash.new
 @msitable = Hash.new
 
+end
+
 def newSystem(name,description)
 	@system_name = name
         @system_desc = description
+     end
 
-
-end
-
-// Styles - r2mq mq2mq mq2r r2r, ip
-// OpMode - static, oneshot, scheduled
-// StateType - stateless,stateful
-// Returns: mst 
+# Styles - r2mq mq2mq mq2r r2r, ip
+# OpMode - static, oneshot, scheduled
+#  StateType - stateless,stateful
+#  Returns: mst 
 def newMicroServiceType(name,abbr,style,opmode,min=1,max=1)
 
 end
