@@ -6,8 +6,11 @@ require 'graphviz'
 
 module Massdriver
 
-def new
+    puts "Starting Masssdriver"
      #  Self Developing Systems
+    puts "Massdriver Inited"
+
+def self.new()
     @g = GraphViz.new( :G, :type => :digraph )
     @github = "https://github.com"
     @gitaccount = nil
@@ -20,7 +23,6 @@ def new
     @msttable = Hash.new
     @msitable = Hash.new
 end
-
 
 def newSystem(name,description)
 	@system_name = name
