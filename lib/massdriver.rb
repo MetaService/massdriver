@@ -19,6 +19,9 @@ module Massdriver
     @msttable = Hash.new
     @msitable = Hash.new
 
+def initialize()
+end
+
 def newSystem(name,description)
 	@system_name = name
         @system_desc = description
