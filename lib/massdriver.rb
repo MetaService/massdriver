@@ -17,7 +17,7 @@ module Massdriver
 
 def newSystem(name,description)
 	@system_name = name
-        
+        @system_desc = description
 
 
 end
