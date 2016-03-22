@@ -1,6 +1,8 @@
 require "massdriver/version"
 require 'rubygems'
 require 'bundler/setup'
+require 'graphviz'
+
 
 module Massdriver
 
